@@ -1,0 +1,11 @@
+---
+# vars file for gh
+gh_platform: '{{ gh_os }}_{{ gh_arch }}'
+gh_name: gh_{{ gh_ver }}_{{ gh_platform }}
+gh_archive: '{{ gh_name }}.{{ gh_archive_type | default("tar.gz") }}'
+gh_tmp_archive: /tmp/{{ gh_archive }}
+gh_url: '{{ gh_mirror }}/v{{ gh_ver }}/{{ gh_archive }}'
+gh_checksum: '{{ gh_checksums[gh_ver][gh_platform] }}'
+gh_install_dir: '{{ gh_parent_install_dir }}/{{ gh_name }}'
+gh_exe: '{{ gh_install_dir }}/bin/gh'
+gh_link: '{{ gh_parent_install_dir }}/bin/gh'

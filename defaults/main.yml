@@ -1,0 +1,22 @@
+---
+# defaults file for gh
+gh_ver: 1.12.1
+gh_mirror: https://github.com/cli/cli/releases/download
+gh_os: linux
+gh_arch: amd64
+gh_parent_install_dir: /usr/local
+gh_checksums:
+  # https://github.com/cli/cli/releases/download/v1.12.1/gh_1.12.1_checksums.txt
+  '1.12.1':
+    # https://github.com/cli/cli/releases/download/v1.12.1/gh_1.12.1_linux_386.tar.gz
+    linux_386: sha256:aa59f3166e0ec9d1c50cdb2b1c7f79b3c50a302d4d12c6a2e3aafeefcd738749
+    # https://github.com/cli/cli/releases/download/v1.12.1/gh_1.12.1_linux_amd64.tar.gz
+    linux_amd64: sha256:e03f4098f9dd23166c9ad10ff312630258689d9c3706500caa3fc2e4e0735ffd
+    # https://github.com/cli/cli/releases/download/v1.12.1/gh_1.12.1_linux_arm64.tar.gz
+    linux_arm64: sha256:b022ac5cde8f8e15ddefdd645794a85e77d1ceed7c27e50f122f073537cf6b26
+    # https://github.com/cli/cli/releases/download/v1.12.1/gh_1.12.1_linux_armv6.tar.gz
+    linux_armv6: sha256:366b56d88f75857e5594d347306d4039d56ee71358b1e7d1ea45c44b151ae7ea
+    # https://github.com/cli/cli/releases/download/v1.12.1/gh_1.12.1_macOS_amd64.tar.gz
+    macOS_amd64: sha256:3e41308ad7d8a186ed9f21ee984948284ef1d843f9309d1c142d8a9d2dfd9aa4
+    # https://github.com/cli/cli/releases/download/v1.12.1/gh_1.12.1_windows_amd64.zip
+    windows_amd64: sha256:3e8adfaaa32cbf46a4cd1d44727044ba473a89e7f6ed5258cacd88d692363e22
