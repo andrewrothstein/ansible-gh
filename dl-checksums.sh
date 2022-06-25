@@ -40,4 +40,4 @@ dl_ver() {
     dl $ver $lchecksums windows amd64 zip
 }
 
-dl_ver ${1:-2.12.1}
+dl_ver ${1:-2.13.0}
