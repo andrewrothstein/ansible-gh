@@ -33,6 +33,3 @@ galaxy_info:
   galaxy_tags:
     - development
   role_name: gh
-
-dependencies:
-  - andrewrothstein.unarchive-deps

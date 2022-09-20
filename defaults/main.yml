@@ -1,9 +1,16 @@
 ---
 # defaults file for gh
-gh_ver: 2.14.7
+gh_ver: 2.15.0
 gh_mirror: https://github.com/cli/cli/releases/download
-gh_os: linux
-gh_arch: amd64
+gh_os_map:
+  Linux: linux
+  Darwin: macOS
+  Windows: windows
+gh_arch_map:
+  386: 386
+  aarch64: arm64
+  armv6: armv6
+  x86_64: amd64
 gh_parent_install_dir: /usr/local
 gh_checksums:
   # https://github.com/cli/cli/releases/download/v1.12.1/gh_1.12.1_checksums.txt
@@ -352,3 +359,19 @@ gh_checksums:
     windows_386: sha256:9c55ebcd2388c8a83979dca4ebe0f4214e0a48ee405a03dd3b647378c273e8a3
     # https://github.com/cli/cli/releases/download/v2.14.7/gh_2.14.7_windows_amd64.zip
     windows_amd64: sha256:f28af85dce3319ef8049dee0953ec3421dc747731e4849d6c4de9d54c2e18d71
+  # https://github.com/cli/cli/releases/download/v2.15.0/gh_2.15.0_checksums.txt
+  '2.15.0':
+    # https://github.com/cli/cli/releases/download/v2.15.0/gh_2.15.0_linux_386.tar.gz
+    linux_386: sha256:3505a547c402f4d079e9381cf0ceef096653d26f2e1388ab0628cf776c1cd6a1
+    # https://github.com/cli/cli/releases/download/v2.15.0/gh_2.15.0_linux_amd64.tar.gz
+    linux_amd64: sha256:c1ddab00cc406c34f17f40e3969e9d6690606dec0df564c5d533e5020598323d
+    # https://github.com/cli/cli/releases/download/v2.15.0/gh_2.15.0_linux_arm64.tar.gz
+    linux_arm64: sha256:4d88daca01db5c9efb5815e297cd3f8ee55c928eda7fa0cfe3f1dfae6d1cc8e5
+    # https://github.com/cli/cli/releases/download/v2.15.0/gh_2.15.0_linux_armv6.tar.gz
+    linux_armv6: sha256:368ede2e0f3acd19f59d37739780ec3ace71f77df14de322c01d3d80a13cc848
+    # https://github.com/cli/cli/releases/download/v2.15.0/gh_2.15.0_macOS_amd64.tar.gz
+    macOS_amd64: sha256:396972e1c340624879922cd0d7f553f9f9729a14febc56505ebea96713d89e34
+    # https://github.com/cli/cli/releases/download/v2.15.0/gh_2.15.0_windows_386.zip
+    windows_386: sha256:fc6fcfe0f569ed35881a3ae45e756de02d85359309f32adea4d713d4b5030c9e
+    # https://github.com/cli/cli/releases/download/v2.15.0/gh_2.15.0_windows_amd64.zip
+    windows_amd64: sha256:a4a49ad59bdd79be00375ab7426d3cb15bdd7bcdc50b0df7ef1f4bdc96315dc2
