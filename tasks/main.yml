@@ -1,8 +1,9 @@
 ---
-- include_role:
+- name: Install unarchivedeps
+  ansible.builtin.include_role:
     name: andrewrothstein.unarchivedeps
-- name: resolve platform specific vars
-  include_vars: '{{ item }}'
+- name: Resolve platform specific vars
+  ansible.builtin.include_vars: '{{ item }}'
   with_first_found:
     - files:
         - '{{ ansible_distribution }}-{{ ansible_distribution_release }}.yml'
@@ -11,41 +12,42 @@
       skip: true
       paths:
         - '{{ role_path }}/vars'
-- name: look for install at {{ gh_exe }}
+- name: Look for install at {{ gh_exe }}
   become: true
-  stat:
+  ansible.builtin.stat:
     path: '{{ gh_exe }}'
   changed_when: false
   register: gh_binary
-- when: not gh_binary.stat.exists
+- name: Download and install gh
+  when: not gh_binary.stat.exists
   block:
-    - name: download {{ gh_url }}
+    - name: Download {{ gh_url }}
       become: true
       become_user: root
-      get_url:
+      ansible.builtin.get_url:
         url: '{{ gh_url }}'
         dest: '{{ gh_tmp_archive }}'
         checksum: '{{ gh_checksum }}'
-        mode: 0644
-    - name: unarchive {{ gh_tmp_archive }}
+        mode: '644'
+    - name: Unarchive {{ gh_tmp_archive }}
       become: true
       become_user: root
-      unarchive:
+      ansible.builtin.unarchive:
         remote_src: true
         src: '{{ gh_tmp_archive }}'
         dest: '{{ gh_parent_install_dir }}'
         creates: '{{ gh_install_dir }}'
   always:
-    - name: rm -f {{ gh_tmp_archive }}
+    - name: Rm -f {{ gh_tmp_archive }}
       become: true
       become_user: root
-      file:
+      ansible.builtin.file:
         path: '{{ gh_tmp_archive }}'
         state: absent
-- name: linking {{ gh_link }} to {{ gh_exe }}
+- name: Linking {{ gh_link }} to {{ gh_exe }}
   become: true
   become_user: root
-  file:
+  ansible.builtin.file:
     src: '{{ gh_exe }}'
     dest: '{{ gh_link }}'
     state: link
