@@ -1,6 +1,6 @@
 ---
 # defaults file for gh
-gh_ver: 2.52.0
+gh_ver: 2.53.0
 gh_mirror: https://github.com/cli/cli/releases/download
 gh_os_map:
   Linux: linux
@@ -1137,3 +1137,21 @@ gh_checksums:
     windows_386: sha256:926aa6c8be54b5f9ac7f10434ae787bda6934675434431f96521866529348de3
     # https://github.com/cli/cli/releases/download/v2.52.0/gh_2.52.0_windows_amd64.zip
     windows_amd64: sha256:f806ccb7b7aa479cafc8c50c7ca46e5a12ef53154203fb8da1ab35fbc41a38eb
+  # https://github.com/cli/cli/releases/download/v2.53.0/gh_2.53.0_checksums.txt
+  '2.53.0':
+    # https://github.com/cli/cli/releases/download/v2.53.0/gh_2.53.0_linux_386.tar.gz
+    linux_386: sha256:4c0480ead08ccd54590f2f15ce53a8c012f0f3ce7996d1cae09d49effdc7ea58
+    # https://github.com/cli/cli/releases/download/v2.53.0/gh_2.53.0_linux_amd64.tar.gz
+    linux_amd64: sha256:ed2caf962730e0f593a2b6cae42a9b827b8a9c8bdd6efb56eae7feec38bdd0c6
+    # https://github.com/cli/cli/releases/download/v2.53.0/gh_2.53.0_linux_arm64.tar.gz
+    linux_arm64: sha256:22c4254025ef5acd7e5406a0eade879e868204861fcb3cd51a95a20cda5d221a
+    # https://github.com/cli/cli/releases/download/v2.53.0/gh_2.53.0_linux_armv6.tar.gz
+    linux_armv6: sha256:58c8ffb349f0a25ee1a64508276f6afa1b116b3bdfba67bcb366b58d16840f50
+    # https://github.com/cli/cli/releases/download/v2.53.0/gh_2.53.0_macOS_amd64.zip
+    macOS_amd64: sha256:9319b54b12ae3d03cc129e20cae7a78101d864c6c52eeb19f184fc868df74a85
+    # https://github.com/cli/cli/releases/download/v2.53.0/gh_2.53.0_macOS_arm64.zip
+    macOS_arm64: sha256:d9a6a358292d26f35287f7dc4bb0fe2eae1bb8deea3ac6957644987fadd2af4d
+    # https://github.com/cli/cli/releases/download/v2.53.0/gh_2.53.0_windows_386.zip
+    windows_386: sha256:b8c837a727effb484cceb724cad75e1abce276e352f07b12a1d327b5c3318edd
+    # https://github.com/cli/cli/releases/download/v2.53.0/gh_2.53.0_windows_amd64.zip
+    windows_amd64: sha256:f23f3268eef9ec4f4a91a79dee510d5d1ab11234f0d6256491cdbb566502db96
