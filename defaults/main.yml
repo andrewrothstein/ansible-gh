@@ -1,6 +1,6 @@
 ---
 # defaults file for gh
-gh_ver: 2.88.1
+gh_ver: 2.91.0
 gh_mirror: https://github.com/cli/cli/releases/download
 gh_os_map:
   Linux: linux
@@ -1857,3 +1857,21 @@ gh_checksums:
     windows_386: sha256:f1e5f6f06ff69e007db0e13e31f2fdb674a30c95ee336a7e510344167bae3d6c
     # https://github.com/cli/cli/releases/download/v2.88.1/gh_2.88.1_windows_amd64.zip
     windows_amd64: sha256:8fdaac525d8919f9f8c265f99ffa26189e5f1fd3a35636adad4fd890a141a555
+  # https://github.com/cli/cli/releases/download/v2.91.0/gh_2.91.0_checksums.txt
+  '2.91.0':
+    # https://github.com/cli/cli/releases/download/v2.91.0/gh_2.91.0_linux_386.tar.gz
+    linux_386: sha256:01b62ebcc476bdaf7059fab2888da319357313444e7af43cd7a71bbc0e255810
+    # https://github.com/cli/cli/releases/download/v2.91.0/gh_2.91.0_linux_amd64.tar.gz
+    linux_amd64: sha256:304a0d2460f4a8847d2f192bad4e2a32cd9420d28716e7ae32198181b65b5f9c
+    # https://github.com/cli/cli/releases/download/v2.91.0/gh_2.91.0_linux_arm64.tar.gz
+    linux_arm64: sha256:ccbed39c472d3dc1c501d1e164a9cffd934c5f6fce1012811a1a59d24cb7d7c6
+    # https://github.com/cli/cli/releases/download/v2.91.0/gh_2.91.0_linux_armv6.tar.gz
+    linux_armv6: sha256:cfbe4e30bac224502d38be0e625d5956858560a67dc450f7a79f1c75a4d472e3
+    # https://github.com/cli/cli/releases/download/v2.91.0/gh_2.91.0_macOS_amd64.zip
+    macOS_amd64: sha256:8806784f93603fe6d3f95c3583a08df38f175df9ebc123dc8b15f919329980e2
+    # https://github.com/cli/cli/releases/download/v2.91.0/gh_2.91.0_macOS_arm64.zip
+    macOS_arm64: sha256:20446cd714d9fa1b69fbd410deade3731f38fe09a2b980c8488aa388dd320ada
+    # https://github.com/cli/cli/releases/download/v2.91.0/gh_2.91.0_windows_386.zip
+    windows_386: sha256:9e2016f105449fb0095b73862540015c19e82beb23e2a54c6fb1517b3311ab75
+    # https://github.com/cli/cli/releases/download/v2.91.0/gh_2.91.0_windows_amd64.zip
+    windows_amd64: sha256:ced3e6f4bb5a9865056b594b7ad0cf42137dc92c494346f1ca705b5dbf14c88e
